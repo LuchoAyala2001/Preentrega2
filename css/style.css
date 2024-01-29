@@ -35,7 +35,8 @@ a:hover{
 /* header*/
 
 header{
-    position: relative;
+    position: sticky;
+    top: 0px;
     padding: 0 2rem;
     background-image: url(https://images.unsplash.com/photo-1575980202155-18b6c1e49169?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
@@ -115,84 +116,113 @@ color: #EEE5E9;
 scale: 0.95;
 }
 
-/*Main del index*/
+/*Main Index*/
 @font-face {
-    font-family: OpenSans;
+    font-family: Fuente Titulo;
     src: url(../fonts/OpenSans_Condensed-ExtraBoldItalic.ttf);
 }
 @font-face {
-    font-family: Water Park;
-    src: url(../fonts/Water\ Park.ttf);
+    font-family: parrafo;
+    src: url(../fonts/LTBinaryNeue.ttf);
 }
 main{
-height: 820px;
-background-image: url(https://static.vecteezy.com/system/resources/previews/017/033/096/non_2x/abstract-ppt-background-design-is-simple-and-suitable-for-ppt-backgrounds-and-others-free-vector.jpg);
-width: 100%;
-background-size: cover;
-background-position: center;
+    background-image: url(../image/background\ main.jpg);
+    background-size: cover;   
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
 }
-.tituloprc{
-    font-family: 'Comfortaa', sans-serif;   
-    text-align: center;
-    padding-top: 5px;
-    color: #2c7da0;
-    border-style: ridge;
+.titulo {
+   display: flex;
+   justify-content: center;
+   align-items: first baseline;
+   
+}
+.titulo img{
+    width: 100px;
+}
+.titulo h1{
+    font-size: 5rem;
+    
+}
+.marine{
+    color: aqua;
+    font-family: 'Comfortaa', sans-serif; 
+}
+.life{
+    color: #c7f9cc;
+    font-family: Fuente Titulo;
 }
 .presentacion{
-    font-family: OpenSans;
-    padding-top: 20px;
-}
-.fotos{
-    display: flex;  
+    display: grid;
+    grid-template-areas: 
+    "titulo foto"
+    "texto foto"
+    ;
     justify-content: space-between;
-    margin-top: auto;
-    flex-wrap: wrap;
-    background-image: url(../image/backround\ main.jpg);
-    opacity: 0.8;
-    background-size: cover;
-    background-position: center;
-    border-radius: 3vh;
-    border-style: inset;
 }
-#agua_dulce1{
-    border-style: solid;
-    border-radius: 4vh;
-    width: 500px;
-    flex-wrap: wrap;
+.presentacion h2{
+    grid-area: titulo;
+    text-align: center;
+    font-size: 3rem;
+    border-bottom-style:double ;
+}
+.presentacion p{
+    grid-area: texto;
+    margin: 5px;
+    font-family: parrafo;
+}
+.presentacion img{
+    grid-area: foto;
+    border-radius: 2vh;
 }
 .agua_dulce{
-    width: 500px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "foto1 titulo1"
+    "foto1 texto1" 
+    ;
 }
-.fotos div img{
-    width: 300px;
+.agua_dulce img{
+    grid-area: foto1;
 }
-#marinos1{
-    border-style: solid;
-    border-radius: 4vh;
-    width: 500px;
-    flex-wrap: wrap;
+.agua_dulce h2{
+    grid-area: titulo1;
+    text-align: center;
+    font-size: 3rem;
+    border-bottom-style: double;
+    align-self: center;
+}
+.agua_dulce p{
+    grid-area: texto1;
+    text-align: center;
+    font-family: parrafo;
 }
 .marinos{
-    width: 500px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "titulo2 foto2"
+    "texto2 foto2"
+    ;
+    border-top-style:ridge
 }
-
-.fotos h1{
-    font-family: Water Park;
+.marinos h2{
     text-align: center;
-    margin-top: 20px;    
- }
- .fotos p{
-    font-family: OpenSans;
-    margin-right: 50px;
-    font-size: 13px;
-    color: #22577a;
- }
+    grid-area: titulo2;
+    border-bottom-style: double;
+    align-self: center;
+    font-size: 3rem;
+}
+.marinos p{
+    grid-area: texto2;
+    font-family: parrafo;
 
-
+}
+.marinos img{
+    grid-area: foto2;
+    width: 500px;
+}
 /*Dropdown Menu*/
 
 .dropdown_menu{

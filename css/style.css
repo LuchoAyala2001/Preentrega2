@@ -130,8 +130,6 @@ main{
     background-size: cover;   
     background-position: center;
     background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
 }
 .titulo {
    display: flex;
@@ -258,7 +256,30 @@ main{
     display:flex;
     justify-content: center;
 }
-
+/*Galeria de fotos*/
+.main_galeria{
+    display: flex;
+    justify-content: center;
+}
+.galeria{
+    display: flex;
+    width: 600px;
+    height: 430px;
+ 
+}
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 5s ease;
+}
+.galeria img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
 /*resposive designs*/
 @media (max-width: 992px){
 

@@ -15,26 +15,23 @@
 </head>
 <body onclick="PlayAudio()">
     <header>
-        <section class="container-fluid">
-        <div class="navbar">              
-            <div class="logo">
-            <img src="../image/logo.png" alt="logo">
-            <a href="../index.html"> Marine life </a>
-                
-        </div>
-        <ul class="links">
-                
-            <li ><a href="nosotros.html"> Info</a> </li>
-            <li ><a href="servicios.html"> Galeria</a> </li>
-            <li ><a href="contacto.html"> Contacto</a> </li>
-        </ul>
-            <a href="../index.html" class="action_btn">Inicio</a>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"> </i>
-        </section>
-
+        <section class="container-fluid ">
+            <div class="navbar">           
+                <div class="logo">
+                <img src="../image/logo.png" alt="logo">
+                <a href="../index.html"> Marine life </a>               
+                </div>
+                <ul class="links">
+                    <li ><a href="nosotros.html"> Info</a> </li>
+                    <li ><a href="servicios.html"> Galeria</a> </li>
+                    <li ><a href="contacto.html"> Contacto</a> </li>
+                </ul>
+                <a href="../index.html" class="action_btn">Inicio</a>
+                <div class="toggle_btn">
+                <i class="fa-solid fa-bars"> </i>     
+                </div>
             </div>
-        </div>
+         </section>
 
         <div class="dropdown_menu">
                 
@@ -47,21 +44,55 @@
         </div>
 
     </header>
-    <main class="main_galeria">
-        <section class="titulo_galeria">
-            <h1>Nuestro espacio</h1>
-        </section>
-        <section class="galeria">
+    <main >      
+        <section class="container galeria">
+            <h1 class="col-12">Galeria</h1>
+            <p> </p>
+            <div class="col-10 col-md-12 imagenes">
             <img src="../image/Img1.jpeg" alt="Imagen1">
             <img src="../image/img2.jpeg" alt="Imagen2">
             <img src="../image/img3.jpeg" alt="Imagen3">
             <img src="../image/img4.jpeg" alt="Imagen4">
             <img src="../image/img5.jpeg" alt="Imagen5">
-            <img src="../image/img6.jpeg" alt="Imagen6">     
+            <img src="../image/img6.jpeg" alt="Imagen6">          
+            </div>
         </section>
     </main>
     <footer>
-            
+      <section class=" container pie">
+        <div class="contacto col-4">
+            <h2>CONTACTO</h1>
+            <section class="telefono">
+                <img src="../image/Logo Telefono.png" alt="Logo Telefono">
+                <P>Numero de Telefono: 1120878707</P>
+            </section>
+            <section class="mail">
+                <img src="../image/Logo Mail.png" alt="">
+                <p>Mail:ayalaluis638@gmail.com</p>
+            </section>           
+        </div>
+        <div class="redes col-4">
+            <h2>Redes sociales</h2>
+            <section class="facebook">
+                <img src="../image/Facebook.png" alt="Facebook">
+                <p><a href="https://www.facebook.com/profile.php?id=61556141908749&is_tour_dismissed=true" target="_blank">Facebook</a></p>
+            </section>
+            <section class="instagram">
+                <img src="../image/Instagram.png" alt="Instagram">
+                <p><a href="https://www.instagram.com/_lucho_ayala/"target="_blank" >Instagram</a></p>
+            </section>
+        </div>
+        <div class="ubicacion col-4"> 
+            <div class="titulo_ubicacion">
+                <img src="../image/ubicacion.png" alt="Logo Ubicacion"> 
+                <h2>Ubicacion</h2>
+            </div>   
+            <div class="padre_mapa">  
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.6719626867566!2d-58.2112983885136!3d-34.7638553727842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f4b0ecdf4e7%3A0x1b58f856c0a0b4ea!2sBerazategui!5e0!3m2!1ses-419!2sar!4v1706727267887!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
+        </div>
+      </section>  
+
     </footer>
     <script>
         function PlayAudio() {

@@ -446,5 +446,26 @@ footer{
     .marinos p{
         font-size: 10px;
     }
+    /*Footer*/
+    .pie{
+        display: block;
+        height: auto;
+    }
+    .contacto{
+        display: inline;
+        width: 100%;
+        border-style: none;
+    }
+    .redes{
+        display: inline;
+        width: 100%;  
+        border-style: none;
+    }
+    .ubicacion{
+        display: inline;
+        width: 100%;
+        border-style: none;
+    }
+
 }
 

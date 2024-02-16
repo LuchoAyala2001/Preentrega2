@@ -16,7 +16,7 @@
 <body onclick="PlayAudio()">
     <header>        
         <section class="container-fluid">
-        <div class="navbar">              
+        <div class="navbar col-md-12">              
             <div class="logo">
             <img src="image/logo.png" alt="logo">
             <a href="index.html"> Marine life </a>
@@ -37,11 +37,11 @@
         </div>
 
 
-        <div class="dropdown_menu">
+        <div class="dropdown_menu ">
                 
-                <li ><a href="about"> Info</a> </li>
-                <li ><a href="services"> Galeria</a> </li>
-                <li ><a href="contact"> Contacto</a> </li>
+                <li ><a href="html/nosotros.html"> Info</a> </li>
+                <li ><a href="html/servicios.html"> Galeria</a> </li>
+                <li ><a href="html/contacto.html"> Contacto</a> </li>
                 <li><a href="index.html" class="action_btn">Inicio</a></li>
 
 
@@ -84,25 +84,25 @@
         <section class=" container pie">
           <div class="contacto col-4">
               <h2>CONTACTO</h1>
-              <section class="telefono">
+              <div class="telefono">
                   <img src="image/Logo Telefono.png" alt="Logo Telefono">
                   <P>Numero de Telefono: 1120878707</P>
-              </section>
-              <section class="mail">
+              </div>
+              <div class="mail">
                   <img src="image/Logo Mail.png" alt="">
                   <p>Mail:ayalaluis638@gmail.com</p>
-              </section>           
+              </div>           
           </div>
           <div class="redes col-4">
               <h2>Redes sociales</h2>
-              <section class="facebook">
+              <div class="facebook">
                   <img src="image/Facebook.png" alt="Facebook">
                   <p><a href="https://www.facebook.com/profile.php?id=61556141908749&is_tour_dismissed=true" target="_blank">Facebook</a></p>
-              </section>
+              </div>
               <section class="instagram">
                   <img src="image/Instagram.png" alt="Instagram">
                   <p><a href="https://www.instagram.com/_lucho_ayala/"target="_blank" >Instagram</a></p>
-              </section>
+              </div>
           </div>
           <div class="ubicacion col-4"> 
               <div class="titulo_ubicacion">
@@ -116,10 +116,6 @@
         </section>  
   
       </footer>
-    <script>
-        function PlayAudio() {
-            document.getElementById("musica").play();
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
